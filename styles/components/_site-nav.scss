@@ -1,0 +1,32 @@
+.site-nav {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .site-nav {
+        display: block;
+    }
+    
+    .site-nav__ {
+        &menu {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+    
+        &menu-item + &menu-item {
+            margin-left: 45px;
+        }
+    }
+    
+    .search-toggle {
+        width: 15px;
+        height: 16px;
+    }
+    
+    .search-toggle-icon {
+        width: 100%;
+        height: 100%;
+    }
+}

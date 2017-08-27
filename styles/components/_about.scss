@@ -1,0 +1,194 @@
+.about {
+    padding: 150px 0;
+    background-color: $color-white;
+}
+
+.about__ {
+    &graphic-left,
+    &graphic-right,
+    &topography-graphic {
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &graphic-left,
+    &graphic-right,
+    &graphic-inner,
+    &topography-container {
+        display: none;
+    }
+
+    &content {
+        position: relative;
+        padding: 32px;
+        z-index: 1;
+        width: 100%;
+
+        & .btn {
+            background-color: $color-secondary;
+
+            &:hover {
+                background-color: $color-primary;
+            }
+        }
+    }
+
+    &tagline {
+        display: none;
+    }
+
+    &title {
+        color: $color-primary;
+        line-height: 1;
+        text-transform: uppercase;
+        font-size: 38px;
+    }
+
+    &excerpt {
+        max-width: 530px;
+        width: 100%;
+        font-size: 22px;
+        line-height: 1.7;
+        margin-bottom: 90px;
+    }
+}
+
+@media screen and (min-width: 445px) {
+    .about__ {
+        &title {
+            font-size: 68px;
+        }
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .about__ {
+        &content {
+            color: #fff;
+            max-width: 600px;
+            margin-left: 32px;
+            background-color: rgba($color-neutral-dk, 0.95);
+        }
+
+        &graphic-right {
+            display: block;
+            position: absolute;
+            top: 155px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 640px;
+            height: 610px;
+            background-image: url('../assets/campfire.png');
+        }
+
+        &topography-container {
+            display: flex;
+            justify-content: flex-end;
+            height: 400px;
+        }
+
+        &topography-graphic {
+            flex: 0 0 500px;
+            height: 100%;
+            background-image: url('../assets/topography.svg');
+        }
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .about {
+        padding: 150px 0 0 0;
+    }
+
+    .about__ {
+        &content {
+            flex: 1;
+            padding: 190px 0 0 90px;
+            color: initial;
+            max-width: initial;
+            margin: 0;
+            background-color: transparent;
+
+            & .btn {
+                background-color: transparent;
+            }
+        }
+
+        &tagline {
+            color: $color-neutral;
+            margin-top: -50px;
+        }
+
+        &graphic-right {
+            left: initial;
+            right: 5%;
+            transform: translateX(0);
+            width: 500px;
+            height: 570px;
+        }
+
+        &topography-container {
+            height: 300px;
+        }
+    }
+}
+
+@media screen and (min-width: 1445px) {
+    .about__ {
+        &graphic-left {
+            display: block;
+            position: absolute;
+            z-index: 2;
+            right: 5%;
+            height: 475px;
+            width: 470px;
+            background-image: url('../assets/fall-leaves.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        &graphic-right {
+            top: 360px;
+            right: 15%;
+            height: 500px;
+        }
+    }
+}
+
+@media screen and (min-width: 1545px) {
+    .about {
+        height: 1400px;
+    }
+
+    .about__ {
+        &container {
+            display: flex;
+            height: calc(100% - 300px);
+        }
+
+        &graphic-left {
+            position: initial;
+            right: initial;
+            flex: 0 0 455px;
+            width: initial;
+            height: 700px;
+            margin-top: 200px;
+        }
+
+        &graphic-right {
+            position: relative;
+            flex: 0 0 320px;
+            top: initial;
+            right: initial;
+            width: initial;
+        }
+
+        &graphic-inner {
+            display: block;
+            position: absolute;
+            top: 35px;
+            left: -115px;
+            margin: 0;
+        }
+    }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/style.min.css">
+    <title>Thinkbox Code Challenge</title>
+</head>
+<body class="home">
+    <!-- site-header -->
+    <header class="site-header">
+        <button class="btn-strip site-header__menu-toggle js-menu-toggle">
+            <svg class="svg-icon site-header__hamburger" xmlns="http://www.w3.org/2000/svg" viewBox="30 -8152 40 36.208">
+                <g transform="translate(12 -8151)">
+                    <line fill="none" stroke="#a3a3a3" stroke-width="2px" x2="40" transform="translate(18)"/>
+                    <line fill="none" stroke="#a3a3a3" stroke-width="2px" x2="40" transform="translate(18 17.104)"/>
+                    <line fill="none" stroke="#a3a3a3" stroke-width="2px" x2="40" transform="translate(18 34.208)"/>
+                </g>
+            </svg>
+        </button> 
+        <a href="/" class="site-header__branding">
+            <svg class="site-header__logo" xmlns="http://www.w3.org/2000/svg" viewBox="100 -8154 111.424 40">
+                <path fill="#1098f7" d="M100.835,23.712c-1.612,2.878-3.626,4.835-7.252,4.835-4.2,0-7.194-3.511-7.194-8.518v-.115c0-4.6,2.878-8.4,7.194-8.4,3.511,0,5.525,1.9,6.964,4.662l10.59-6.216C107.914,4.086,102.216,0,93.755,0c-9.9,0-17.9,6.388-19.914,15.482V.806H61.122V17.727L47.424.806H0V11.683H11.281V39.194H24.115V11.683H35.4V39.194H48.115V21.525L62.388,39.252h8.978a1.683,1.683,0,0,1,.4-.691,4.736,4.736,0,0,0,.46-1.784,13.953,13.953,0,0,0,0-1.554c-.058-.115-.288-.863-.345-1.036a2.838,2.838,0,0,1-.23-.518c-.058-.115-.23-.576-.288-.691a4.566,4.566,0,0,0-.23-.518.379.379,0,0,1,.058-.633.933.933,0,0,0,.173-.806c-.058-.115-.345-.748-.345-.748.058-.058.173-.115.23-.23a1.687,1.687,0,0,0,.23-.46c.058-.173.115-.23.173-.4s.058-.345.115-.518a.362.362,0,0,0,0-.345c-.058-.115-.058-.288,0-.288s-.058-.288-.115-.345c-.058,0,.345-.4.345-.4s.173-.576.115-.633.345-.345.345-.4a.108.108,0,0,1,.173,0c.058.058.23.23.23.115a2.04,2.04,0,0,1,.173-.633,1.157,1.157,0,0,0,.23-.46c0-.058.173-.115.23-.173.058,0,.173.518.058.633a2.309,2.309,0,0,0-.173.863c.058.173.058.23.115.288s0,.058.058,0,.345-.633.46-.748c.058-.058.46.633.46.518,0-.058.058-.345.058-.46s-.058-.173-.058-.288a.621.621,0,0,0-.115-.4c-.115-.173-.23-.288-.23-.4s-.058-.345,0-.46c.46.115.518-.173.46-.46.058-.058.115-.115.23-.058.115,0,.288-.23.173-.345-.115-.173-.173-.173-.23-.345-.058-.115-.115-.4.058-.518a4.238,4.238,0,0,1,.345-.288c.058-.058.518-.576.748-.345s.288.115.4.173a1.258,1.258,0,0,1,.288.173c.058.115.23.115.4,0a.681.681,0,0,1,.576.058c.173.115.173.173.23.345,0,.173.115.288.46.288.288,0,.345,0,.46.173s.288.115.4.115a2.856,2.856,0,0,1,.748.173c.058,0,.288.115.288.288a.617.617,0,0,0,.115.345c.058.115.115.115.173.23s.115.23,0,.288c-.115,0-.288.288-.345.345s0,.173.173.345.345.288.4.345c.115.115.115.46.173.633,0,.173.058.345-.058.46s.173.748.173.806a.4.4,0,0,1-.115.23,1.3,1.3,0,0,0-.518.691c0,.173.115.46-.115.633,0,0-.345.23-.46.288s-.345.173-.345.345-.115.978,0,1.094l.288.288a.634.634,0,0,0,.576.058,1.258,1.258,0,0,0,.173-.288c.058-.115.4-.4.46-.576a7.561,7.561,0,0,1,.518-.978c.058,0,.633-.173.633-.345.058-.173.633-.345,1.036.23a3.151,3.151,0,0,1,.4.748c.058.115.058.576.115.748a4.792,4.792,0,0,1,.4,1.209,6.011,6.011,0,0,0,.518,1.266c0,.345-.058.691-.058.921a2.321,2.321,0,0,1,0,.633c-.058.115,0,.345-.115.345s-.173,0-.173-.115c-.058-.115-.806.115-.633.23s-.115.691-.115.806-.115.23-.345.4c-.173.115-.4.115-.46.345A20.408,20.408,0,0,0,93.295,40c9.554,0,14.906-4.662,18.129-10.36ZM78.043,21.295c-.058-.058-.345-.23-.46-.173-.115.115-.173.058-.345,0-.115-.058-.46.173-.46.173s-.691-.4-.748-.288-.115.058-.058.173a2.813,2.813,0,0,1-.058.748s-.23,0-.23-.058l-.173-.173a2.09,2.09,0,0,0-.518-.46c-.115-.058-.23,0-.288-.058a.229.229,0,0,0-.288-.058c-.173.058-.288-.058-.4-.115a.94.94,0,0,0-.4,0,.345.345,0,0,0-.345.173c-.115.173-.23.46-.518.4-.288,0-.23-.058-.4.058s-.345.115-.288,0,.058-.173-.115-.115-.058.115-.23.115a2.062,2.062,0,0,0-.633.23c-.115.058-.115.115-.115.23s0,.4-.173.4-.345.345-.345.345-.288.518-.4.4c-.173-.115,0-.518,0-.518s.288-.806.173-.576-.288.23-.345.173c-.173-.173-.23-.173-.23.058s-.058.23-.058.288c-.058.058-.173.23-.288.288-.288.058-.115,0-.173-.173,0-.173-.115-.288.058-.4.058-.058,0-.518-.115-.23a.6.6,0,0,0-.058.23c0,.115-.518.691-.518.921a3.009,3.009,0,0,1-.345.921,3.867,3.867,0,0,1-.345.691,6.29,6.29,0,0,1-.46.863c0,.058-.173.058-.23,0s-.345-.345-.173-.518a.634.634,0,0,0,.173-.518c0-.115-.115-.288-.23-.115-.115.115-.518.173-.4-.115.115-.345.288-.4.115-.633-.173-.173-.058-.345,0-.46s-.173-.518-.46-.518-.345.058-.46,0c-.115,0-.173-.23-.058-.288s.115-.748-.46-.633a3.543,3.543,0,0,1-1.381,0c-.173-.058-.46.115-.633-.115a1.507,1.507,0,0,0-.748-.345c-.173-.058-.23-.115-.518-.23-.23-.058-.46-.115-.806-.23-.46-.173-.518-.058-.633-.173a.7.7,0,0,0-.518-.173c-.173-.058-.633-.058-.518-.345a.543.543,0,0,0-.173-.576,2.611,2.611,0,0,0-.46-.115c-.23-.058-.23-.173-.23-.23.23-.23.518-.23.921-.345a.772.772,0,0,0,.633-.4c.173-.173.518-.518.863-.345a1.118,1.118,0,0,0,.921-.173c.115-.115.345-.115.46-.345.115-.173.173-.173.345-.173a.433.433,0,0,0,.4-.288.425.425,0,0,1,.288-.345,5.033,5.033,0,0,0,.576-.46c.058-.058.173-.115.4-.288.173-.23.288-.4.576-.4.23,0,.23-.058.345-.173a1.187,1.187,0,0,1,.748-.173h.4c.173,0,.173.23,0,.288-.23,0-.23.058-.4.058,0,.115-.058.173-.173.288s-.288.173-.4.288-.058.173-.173.173-.288.4-.345.518c0,.115-.173.288-.23.345a5.188,5.188,0,0,1-.288.518c-.058.115.115.4.173.345.115-.115.23-.173.288-.288s.691-.115.921-.058c.173,0,.4.058.518.058.173,0,.288-.058.288.115.058.173.058.23.23.23s.173,0,.173.173.288.23.288.345.23.173.288.288.115.115.115.345.288.173.345.23a.855.855,0,0,0,.345-.058c.115-.058.173,0,.345-.115.115-.115.288-.115.288.058s.173.173.23.173h.173c.058-.058,0,0,.058-.115s.058-.173.173-.058.058.115.173.115c.115.058.173.173.173.115a.442.442,0,0,0,.115-.173,5.538,5.538,0,0,1,.978-.748c.058-.058.115-.058.115-.115s.115-.115.23-.115a1.775,1.775,0,0,0,.518-.058,4.356,4.356,0,0,1,.863-.058,1.548,1.548,0,0,0,.921-.23.906.906,0,0,1,.691-.23c.173,0,.173.058.288,0s.23-.115.115.173a2.376,2.376,0,0,0-.058.863c0,.115.115.115.115.173h.46c.058,0,0,.058.058.115a.435.435,0,0,0,.23-.058c.115-.058.173-.23.288-.173.115,0,.173.058.173.23,0,.115.115.173.23,0,.115-.115.4-.288.46-.4.058-.058.115.058.173.115s.058.115.115.173.115.23.173.288a.211.211,0,0,1,.058.173,4.086,4.086,0,0,0,.806.576c.576,0,.345.633.633.691C78.791,21.122,78.1,21.41,78.043,21.295Z" transform="translate(100 -8154)"/>
+            </svg>
+        </a> 
+        <nav class="site-header__nav site-nav">
+            <ul class="site-nav__menu">
+                <li class="site-nav__menu-item">
+                    <a href="#" class="link link-base site-nav__menu-link">Lifestyle</a>
+                </li>
+                <li class="site-nav__menu-item">
+                    <a href="#" class="link link-base site-nav__menu-link">Products</a>
+                </li>
+                <li class="site-nav__menu-item">
+                    <a href="#" class="link link-base site-nav__menu-link">Contact</a>
+                </li>
+                <li class="site-nav__menu-item">
+                    <button class="btn-strip search-toggle js-search-toggle">
+                        <svg class="svg-icon search-toggle__icon" xmlns="http://www.w3.org/2000/svg" viewBox="1534.45 -8138 16.55 16.075">
+                            <path fill="#a3a3a3" stroke="#a3a3a3" stroke-width="2px" d="M13.918,14.083,9.855,9.828A5.7,5.7,0,0,0,11.53,5.765a5.749,5.749,0,1,0-2.086,4.447l4.09,4.255a.265.265,0,0,0,.384,0A.265.265,0,0,0,13.918,14.083Zm-8.153-3.1a5.216,5.216,0,1,1,5.216-5.216A5.214,5.214,0,0,1,5.765,10.981Z" transform="translate(1550 -8137) rotate(90)"/>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- /site-header -->
+
+    <!-- main -->
+    <main class="main" role="main">
+        
+        <!-- section:hero -->
+        <section class="hero">
+            <div class="hero__container fw-container">
+                <a href="#" class="link link-base hero__help-link">
+                    <span class="hero__help-vert vert-text">Need help? Click Here</span>
+                </a>
+                <figure class="hero__window">
+                    <a href="" class="link link-secondary hero__video-link">
+                        <span class="hero__video-vert vert-text">
+                            Watch a dope video
+                            <svg class="svg-icon hero__play-icon" xmlns="http://www.w3.org/2000/svg" viewBox="1095 -7553 55 55">
+                                <g transform="translate(848 -8052)">
+                                    <g fill="none" stroke-width="1.5px" transform="translate(247 499)">
+                                        <circle fill="none" cx="27.5" cy="27.5" r="26.75"/>
+                                    </g>
+                                    <path stroke="none" d="M11.173.5l3.669,14.341L.5,11.173Z" transform="translate(261.652 526.182) rotate(-45)"/>
+                                </g>
+                            </svg>
+                        </span>
+                    </a>
+                    <div class="hero__content">
+                        <p class="hero__sub-heading">Welcome to the</p>
+                        <h1 class="hero__heading">Great Lake State</h1>
+                    </div>
+                </figure>
+            </div>
+        </section>
+        <!-- /section:hero -->
+
+        <!-- section:about -->
+        <section class="about">
+            <div class="about__container fw-container">
+                <div class="about__graphic-left"></div>
+                <div class="about__content">
+                    <span class="vert-text about__tagline">The North Coast</span>
+                    <h1 class="about__title">Peace. Love. <br> Michigan.</h1>
+                    <p class="about__excerpt">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque nihil accusamus pariatur dolorum nobis, dolores provident consectetur reiciendis minima error deleniti optio? Consequuntur quo itaque cumque modi quos neque?
+                    </p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+                <div class="about__graphic-right">
+                    <img src="assets/welcome-michigan.png" alt="Welcome To Michigan Sign" class="about__graphic-inner">
+                </div>
+            </div>
+            <div class="about__topography-container">
+                <div class="about__topography-graphic"></div>
+            </div>
+        </section>
+        <!-- /section:about -->
+
+        <!-- section:slides -->
+        <section id="js-slides" class="slides">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <figure class="slide__window swiper-lazy" style="background-image: url(assets/bridge.png)">
+                            <div class="slide__content">
+                                <p class="slide__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque nihil accusamus pariatur dolorum nobis, dolores provident consectetur reiciendis minima error deleniti optio? Consequuntur quo itaque cumque modi quos neque?
+                                </p>
+                                <img src="assets/lighthouse.png" alt="Michigan Lighthouse" class="slide__graphic">
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide__window" style="background-image: url(assets/strawberries.png)">
+                            <div class="slide__content">
+                                <p class="slide__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque nihil accusamus pariatur dolorum nobis, dolores provident consectetur reiciendis minima error deleniti optio? Consequuntur quo itaque cumque modi quos neque?
+                                </p>
+                                <img src="assets/building.jpg" alt="City Building" class="slide__graphic">
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide__window" style="background-image: url(assets/fall-road.jpg)">
+                            <div class="slide__content">
+                                <p class="slide__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque nihil accusamus pariatur dolorum nobis, dolores provident consectetur reiciendis minima error deleniti optio? Consequuntur quo itaque cumque modi quos neque?
+                                </p>
+                                <img src="assets/lake-ice.jpg" alt="Frozen Lake" class="slide__graphic">
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide__window" style="background-image: url(assets/foliage.jpg)">
+                            <div class="slide__content">
+                                <p class="slide__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque nihil accusamus pariatur dolorum nobis, dolores provident consectetur reiciendis minima error deleniti optio? Consequuntur quo itaque cumque modi quos neque?
+                                </p>
+                                <img src="assets/city.jpg" alt="City along lake" class="slide__graphic">
+                            </div>
+                        </figure>
+                    </div>
+                    <div class="swiper-slide">
+                        <figure class="slide__window" style="background-image: url(assets/lake.jpg)">
+                            <div class="slide__content">
+                                <p class="slide__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque nihil accusamus pariatur dolorum nobis, dolores provident consectetur reiciendis minima error deleniti optio? Consequuntur quo itaque cumque modi quos neque?
+                                </p>
+                                <img src="assets/mtb.jpg" alt="Mountain Biking" class="slide__graphic">
+                            </div>
+                        </figure>
+                    </div>
+                </div>
+                <ul class="slides__dot-nav">
+                    <li class="slides__dot slides__dot--is-active"></li>
+                    <li class="slides__dot"></li>
+                    <li class="slides__dot"></li>
+                    <li class="slides__dot"></li>
+                    <li class="slides__dot"></li>
+                </ul>
+            </div>
+            <button class="slides__control-btn slides__control-prev"></button>
+            <button class="slides__control-btn slides__control-next"></button>
+        </section>
+        <!-- /section:slides -->
+
+        <!-- section:faq -->
+        <section class="faq">
+            <div class="faq__container fw-container">
+                <span class="faq__subtitle vert-text">Have a question?</span>
+                <h1 class="faq__title">FAQ's</h1>
+                <ul id="js-accordion" class="faq__accordion">
+                    <li class="js-spoiler faq__spoiler faq__spoiler--is-active">
+                        <button class="faq__spoiler-toggle">
+                            <p class="faq__spoiler-title">Who is TNC?</p>
+                        </button>
+                        <div class="faq__spoiler-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque nihil accusamus pariatur dolorum nobis, dolores provident consectetur reiciendis minima error deleniti optio? Consequuntur quo itaque cumque modi quos neque?</p>
+                        </div>
+                    </li>
+                    <li class="js-spoiler faq__spoiler">
+                        <button class="faq__spoiler-toggle">
+                            <p class="faq__spoiler-title">Why are we awesome?</p>
+                        </button>
+                        <div class="faq__spoiler-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque nihil accusamus pariatur dolorum nobis, dolores provident consectetur reiciendis minima error deleniti optio? Consequuntur quo itaque cumque modi quos neque?</p>
+                        </div>
+                    </li>
+                    <li class="js-spoiler faq__spoiler">
+                        <button class="faq__spoiler-toggle">
+                            <p class="faq__spoiler-title">What do people usually ask about?</p>
+                        </button>
+                        <div class="faq__spoiler-content">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque nihil accusamus pariatur dolorum nobis, dolores provident consectetur reiciendis minima error deleniti optio? Consequuntur quo itaque cumque modi quos neque?</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- /section:faq -->
+
+        <!-- section:promo -->
+        <section class="promo">
+            <div class="promo__container fw-container">
+                <div class="promo__graphics">
+                    <img src="assets/beach-pebbles.png" alt="Beach pebbles" class="promo__top-graphic">
+                    <img src="assets/waterfall.png" alt="Sceneic Waterfall" class="promo__bottom-graphic">
+                </div>
+                <div class="promo__content">
+                    <h1 class="promo__title">Pure Michigan</h1>
+                    <p class="promo__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse eaque nihil accusamus pariatur dolorum nobis, dolores provident consectetur reiciendis minima error deleniti optio? Consequuntur quo itaque cumque modi quos neque?
+                    </p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <!-- /section:promo -->
+
+        <!-- section:contact -->
+        <section class="contact">
+            <div class="contact__container">
+                <span class="contact__subtitle vert-text">Wanna work with us?</span>
+                <div class="contact__grid">
+                    <div class="contact__row">
+                        <img src="assets/lakeside-trail.png" alt="Lakeside trail" class="contact__top-graphic">
+                    </div>
+                    <div class="contact__row">
+                        <img src="assets/waterfall.png" alt="Sceneic Waterfall" class="contact__left-graphic">
+                        <img src="assets/kayaks.png" alt="Kayaks on the beach" class="contact__right-graphic">
+                    </div>
+                    <div class="contact__content">
+                        <h1 class="contact__title">Let's Talk</h1>
+                        <a href="#" class="btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /section:contact -->
+
+    </main>
+    <!-- /main -->
+
+    <!-- site-footer -->
+    <footer class="site-footer">
+        <div class="site-footer__container fw-container">
+            <div class="site-footer__tree-fade">
+                <form class="email-form site-footer__email-form">
+                    <label class="email-form__group">
+                        <span class="email-form__label">Stay Up To Date</span>
+                        <input type="text" placeholder="Email Signup" class="email-form__input">
+                    </label>
+                </form>
+                <a href="tel:5551232728" class="link site-footer__phone-link">Have a question? Call (555) 123-2728</a>
+            </div>
+            <div class="site-footer__block">
+                <ul class="site-footer__social-links social-links">
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link">
+                            <svg class="svg-icon svg-icon__gplus" xmlns="http://www.w3.org/2000/svg" viewBox="678 -805.401 38.453 24.401">
+                                <g transform="translate(678 -805.401)">
+                                    <path d="M-.008,12.225A12.157,12.157,0,0,1,11.585.042a12.188,12.188,0,0,1,8.769,2.993c-1.012,1.1-2.024,2.192-3.077,3.2-2.15-1.307-4.722-2.276-7.209-1.391a7.714,7.714,0,1,0,5.227,14.5,6.761,6.761,0,0,0,3.963-4.637c-2.319-.042-4.679,0-7-.084V10.454H23.937c.253,3.415-.253,7.04-2.487,9.78-3.035,3.878-8.6,5.059-13.153,3.5A12.1,12.1,0,0,1-.008,12.225Z" transform="translate(0.014 0.001)"/>
+                                    <path d="M69.741,16.6H73.2c0,1.18,0,2.319.042,3.5,1.18,0,2.319,0,3.5.042V23.6h-3.5c0,1.18,0,2.319-.042,3.5H69.741c0-1.18,0-2.319-.042-3.5-1.18,0-2.319,0-3.5-.042V20.1c1.18,0,2.319,0,3.5-.042C69.741,18.919,69.741,17.738,69.741,16.6Z" transform="translate(-38.286 -9.602)"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link">
+                            <svg class="svg-icon svg-icon__instagram" xmlns="http://www.w3.org/2000/svg" viewBox="733.193 -806.001 24.402 24.397">
+                                <g transform="translate(733.194 -806)">
+                                    <path d="M-261.023-4602.676a8.93,8.93,0,0,1-2.963-.566,6.047,6.047,0,0,1-2.159-1.409,5.928,5.928,0,0,1-1.409-2.159,8.992,8.992,0,0,1-.567-2.963c-.058-1.3-.073-1.719-.073-5.03s.015-3.729.073-5.026a8.922,8.922,0,0,1,.567-2.962,6.036,6.036,0,0,1,1.409-2.16,5.924,5.924,0,0,1,2.159-1.409,8.923,8.923,0,0,1,2.959-.567c1.3-.058,1.719-.073,5.03-.073s3.728.015,5.035.069a8.97,8.97,0,0,1,2.963.565,6.043,6.043,0,0,1,2.159,1.41,5.928,5.928,0,0,1,1.409,2.159,8.987,8.987,0,0,1,.567,2.963c.058,1.3.073,1.714.073,5.031s-.015,3.727-.073,5.03a8.936,8.936,0,0,1-.567,2.963,6.046,6.046,0,0,1-1.409,2.159,5.931,5.931,0,0,1-2.159,1.409,8.993,8.993,0,0,1-2.963.566c-1.3.058-1.714.073-5.03.073S-259.72-4602.618-261.023-4602.676Zm.1-22.053a6.789,6.789,0,0,0-2.266.42,3.742,3.742,0,0,0-1.4.911,3.788,3.788,0,0,0-.91,1.4,6.646,6.646,0,0,0-.422,2.266c-.058,1.288-.072,1.67-.072,4.928s.014,3.642.072,4.928a6.778,6.778,0,0,0,.422,2.267,3.728,3.728,0,0,0,.91,1.4,3.789,3.789,0,0,0,1.4.911,6.663,6.663,0,0,0,2.266.42c1.288.059,1.671.073,4.929.073s3.64-.014,4.928-.073a6.782,6.782,0,0,0,2.266-.42,3.734,3.734,0,0,0,1.405-.911,3.782,3.782,0,0,0,.909-1.4,6.658,6.658,0,0,0,.422-2.267c.058-1.287.073-1.67.073-4.928s-.015-3.641-.073-4.928a6.764,6.764,0,0,0-.422-2.266,3.729,3.729,0,0,0-.909-1.4,3.806,3.806,0,0,0-1.405-.911,6.632,6.632,0,0,0-2.266-.42c-1.288-.059-1.67-.073-4.928-.073S-259.639-4624.792-260.927-4624.729Zm-1.335,9.93a6.266,6.266,0,0,1,6.265-6.265,6.263,6.263,0,0,1,6.265,6.265,6.263,6.263,0,0,1-6.265,6.265A6.263,6.263,0,0,1-262.262-4614.8Zm2.2,0a4.066,4.066,0,0,0,4.067,4.066,4.067,4.067,0,0,0,4.067-4.066A4.067,4.067,0,0,0-256-4618.87,4.066,4.066,0,0,0-260.064-4614.8Zm9.116-6.512a1.463,1.463,0,0,1,1.463-1.462,1.463,1.463,0,0,1,1.462,1.462,1.463,1.463,0,0,1-1.462,1.462A1.463,1.463,0,0,1-250.949-4621.315Z" transform="translate(268.194 4627)"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link">
+                            <svg class="svg-icon svg-icon__facebook" xmlns="http://www.w3.org/2000/svg" viewBox="784.175 -806 24.401 24.42">
+                                <path d="M23.066,0H1.344A1.347,1.347,0,0,0,0,1.344V23.057A1.347,1.347,0,0,0,1.344,24.4H13.033V14.954H9.85V11.268h3.183V8.561c0-3.155,1.93-4.866,4.738-4.866a25.859,25.859,0,0,1,2.844.146V7.134H18.667c-1.527,0-1.829.723-1.829,1.793v2.351h3.649l-.476,3.686H16.838V24.42h6.219A1.347,1.347,0,0,0,24.4,23.075V1.344A1.333,1.333,0,0,0,23.066,0Z" transform="translate(784.175 -806)"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link">
+                            <svg class="svg-icon svg-icon__twitter" xmlns="http://www.w3.org/2000/svg" viewBox="832.542 -802.631 24.401 19.833">
+                                <g transform="translate(832.542 -802.631)">
+                                    <path d="M7.672,19.833A14.149,14.149,0,0,0,21.912,5.593c0-.215,0-.429-.01-.644a10.2,10.2,0,0,0,2.5-2.6,10.144,10.144,0,0,1-2.879.791A5.036,5.036,0,0,0,23.728.371a9.956,9.956,0,0,1-3.182,1.21,5.006,5.006,0,0,0-8.658,3.426,5.532,5.532,0,0,0,.127,1.142A14.247,14.247,0,0,1,1.7.917,5.025,5.025,0,0,0,3.25,7.6,5.139,5.139,0,0,1,.976,6.979v.068a5.016,5.016,0,0,0,4.012,4.91,5.034,5.034,0,0,1-2.255.088,5,5,0,0,0,4.675,3.475,10.039,10.039,0,0,1-6.217,2.147A9.632,9.632,0,0,1,0,17.6a14.3,14.3,0,0,0,7.672,2.235"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__link">
+                            <svg class="svg-icon svg-icon__youtube" xmlns="http://www.w3.org/2000/svg" viewBox="871.446 -803.735 50.554 21.103">
+                                <g transform="translate(871.446 -803.735)">
+                                    <path d="M-381.205-4608.465a5.125,5.125,0,0,1-3.319-1.281,6.424,6.424,0,0,1-1.2-2.977,44.959,44.959,0,0,1-.3-4.855v-2.282a45.156,45.156,0,0,1,.3-4.854,6.43,6.43,0,0,1,1.2-2.978,4.345,4.345,0,0,1,3.017-1.272c4.218-.3,10.547-.3,10.547-.3h.01s6.327,0,10.546.3a4.333,4.333,0,0,1,3.018,1.272,6.424,6.424,0,0,1,1.2,2.978,43.784,43.784,0,0,1,.293,4.854v2.282a45.016,45.016,0,0,1-.3,4.855,6.418,6.418,0,0,1-1.2,2.977,4.342,4.342,0,0,1-3.017,1.272c-4.218.3-10.547.312-10.547.312S-378.793-4608.232-381.205-4608.465Zm3.725-5.844a4.135,4.135,0,0,0,.213,1.485,1.21,1.21,0,0,0,1.2.776,2.813,2.813,0,0,0,2.019-1.251v1.111h1.917v-10.094h-1.917v7.671c-.4.564-.738.889-1.1.889-.253,0-.373-.1-.414-.385v-8.175h-1.918Zm10.607,2.252a1.5,1.5,0,0,0,1.5-1.141,7.755,7.755,0,0,0,.2-2.018v-4.037a7.165,7.165,0,0,0-.242-2.019,1.487,1.487,0,0,0-1.464-1.17,2.606,2.606,0,0,0-1.927,1.141v-4.411h-1.817v13.524h1.817v-1.02A2.615,2.615,0,0,0-366.873-4612.057Zm3.542-9.336a4.032,4.032,0,0,0-.616,2.422v3.532a3.767,3.767,0,0,0,.637,2.333,2.611,2.611,0,0,0,2.211,1.028,2.506,2.506,0,0,0,2.209-1.09,2.553,2.553,0,0,0,.424-1.09c.01-.183.062-.606.062-1.191v-.282h-1.918c0,.737.01,1.17-.009,1.271a.783.783,0,0,1-.819.738c-.625,0-.9-.465-.867-1.424v-1.816h3.633v-2.06a3.948,3.948,0,0,0-.6-2.371,2.551,2.551,0,0,0-2.159-1.06A2.623,2.623,0,0,0-363.331-4621.393Zm-20.2-2.4h2.119v11.606h2.019v-11.606h2.22v-1.918h-6.358Zm-15.663,10.717a3.758,3.758,0,0,1-.587-2.341v-3.624a4.04,4.04,0,0,1,.606-2.432,2.414,2.414,0,0,1,2.119-.979,2.545,2.545,0,0,1,2.119.979,4.079,4.079,0,0,1,.606,2.421v3.634a3.847,3.847,0,0,1-.566,2.341,2.7,2.7,0,0,1-2.16,1.061A2.659,2.659,0,0,1-399.2-4613.077Zm1.331-6.176v4.037c-.1,1.008.211,1.514.807,1.514s.909-.505.807-1.514v-4.037c.1-1.01-.211-1.484-.807-1.484S-397.969-4620.263-397.867-4619.253Zm5.157,6.428a4.157,4.157,0,0,1-.211-1.484v-8.073H-391v8.275c.041.283.161.384.414.384.364,0,.7-.322,1.1-.888v-7.771h1.918v10.194h-1.918v-1.111a2.813,2.813,0,0,1-2.018,1.252A1.211,1.211,0,0,1-392.71-4612.825Zm-11.212.637v-5.551s-2.089-6.8-2.523-8.074h2.119l1.414,5.318,1.413-5.318h2.119l-2.523,8.074v5.551Zm35.122-1.989v-6.116a1.412,1.412,0,0,1,.948-.464c.525,0,.768.294.768,1.312v4.34c0,1.01-.243,1.393-.768,1.393A1.425,1.425,0,0,1-368.8-4614.177Zm6.763-4.258v-1.121c0-.948.261-1.2.867-1.2s.848.283.848,1.211v1.111Z" transform="translate(406.446 4629.265)"/>
+                                </g>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <span class="site-footer__copyright">&copy;2017 TNC. All Rights Reserved</span>
+                <div class="site-footer__info-links">
+                    <a href="#" class="link site-footer__info-link">Sitemap</a>
+                    <a href="#" class="link site-footer__info-link">Privacy Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- /site-footer -->
+
+    <!-- canvas-menu -->
+    <div class="canvas-menu">
+
+    </div>
+    <!-- /canvas-menu -->
+
+    <!-- scripts -->
+    <script type="text/javascript" src="js/main.min.js"></script>
+    <!-- /scripts -->
+</body>
+</html>

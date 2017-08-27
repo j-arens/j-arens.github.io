@@ -1,0 +1,27 @@
+button {
+    cursor: pointer;
+}
+
+.btn {
+    line-height: 60px;
+    padding: 0 65px;
+    border: 2px solid $color-black;
+    color: $color-black;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: transparent;
+    transition: all .2s ease;
+
+    &:hover {
+        color: $color-black;
+        background-color: $color-primary;
+    }
+}
+
+.btn-strip {
+    border: none;
+    background: none;
+    margin: 0;
+    padding: 0;
+}

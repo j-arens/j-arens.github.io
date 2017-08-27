@@ -1,0 +1,140 @@
+.email-form__ {
+    &label,
+    &input {
+        font-weight: bold;
+    }
+
+    &label {
+        display: block;
+        text-transform: uppercase;
+        font-size: 20px;   
+    }
+
+    &input {
+        border: none;
+        line-height: 38px;
+        color: $color-neutral;
+        padding: 0 14px;
+
+        &::placeholder {
+            color: $color-neutral;
+        }
+    }
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.social-links__ {
+    &item {
+        width: 50px;
+        height: 25px;
+    }
+
+    &link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: $color-white;
+
+        &:hover {
+            color: $color-primary;
+        }
+
+        & .svg-icon {
+            width: 100%;
+            height: 100%;
+            fill: currentColor;
+        }
+    }
+}
+
+.site-footer__ {
+    &tree-fade {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        position: relative;
+        height: 600px;
+        padding-bottom: 100px;
+        background-image: url('../assets/faded-tree-bg.png');
+        background-size: cover;
+        background-position: center 40%;
+        background-repeat: no-repeat;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 300px;
+            width: 100%;
+            background: linear-gradient(to bottom, #fff 10%, transparent);
+        }
+    }
+
+    &email-form {
+        margin: 0 0 40px 0;
+    }
+
+    &phone-link {
+        font-size: 18px;
+        color: $color-neutral-dk;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &block {
+        height: 195px;
+        padding: 45px 0 50px 0;
+        background-color: $color-neutral-dk;
+    }
+
+    &social-links {
+        margin: 0 0 30px 0;
+    }
+
+    &copyright,
+    &info-links {
+        display: flex;
+        justify-content: center;
+        font-size: 13px;
+    }
+
+    &copyright {
+        color: $color-white;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+    }
+
+    &info-link {
+        color: $color-white;
+
+        &:hover {
+            color: $color-primary;
+        }
+    }
+
+    &info-link + &info-link {
+        margin-left: 25px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .email-form__ {
+        &label {
+            display: inline-block;
+            vertical-align: middle;
+            margin: 0 50px 0 0;
+        }
+    }
+}

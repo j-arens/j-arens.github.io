@@ -1,0 +1,162 @@
+.slides {
+    height: 810px;
+
+    .swiper-container {
+        height: 670px;
+        padding-bottom: 70px;
+    }
+
+    .swiper-button-disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+
+.slides__ {
+    &dot-nav {
+        position: absolute;
+        z-index: 1;
+        bottom: 95px;
+        width: 100px;
+        margin: 0;
+        padding-bottom: 35px;
+        list-style: none;
+    }
+
+    &dot {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 2px solid $color-white;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all .2s ease;
+    }
+
+    &dot + &dot {
+        margin-top: 10px;
+    }
+
+    &dot--is-active {
+        background-color: $color-primary;
+        border-color: $color-primary;
+    }
+
+    &control-btn {
+        display: inline-block;
+        position: relative;
+        z-index: 1;
+        border: none;
+        top: -95px;
+        padding: 0;
+        height: 60px;
+        width: 50px;
+        background-color: $color-neutral;
+        background-repeat: no-repeat;
+        background-position: center center;
+        transition: background-size .1s ease;
+
+        &:focus {
+            outline: 0;
+        }
+
+        &:active {
+            background-size: 35%;
+        }
+    }
+
+    &control-prev {
+        background-image: url('../assets/chevron-left.png');
+    }
+
+    &control-next {
+        background-image: url('../assets/chevron-right.png');
+    }
+
+    &control-btn + &control-btn {
+        margin-left: -4px;
+    }
+}
+
+.slide__ {
+    &window {
+        position: relative;
+        height: 100%;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+
+    &content {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 786px) {
+    .slide__ {
+        &content {
+            display: block;
+            height: 600px;
+        }
+    
+        &graphic,
+        &text {
+            position: absolute;
+        }
+    
+        &graphic {
+            display: none;
+        }
+    
+        &text {
+            max-width: 450px;
+            width: 100%;
+            max-height: 325px;
+            height: 100%;
+            padding: 40px;
+            font-size: 18px;
+            line-height: 2.25;
+            background-color: rgba($color-primary, 0.8);
+            color: $color-white;
+        }
+    }
+}
+
+@media screen and (min-width: 1115px) {
+    .slides {
+        height: 950px;
+        
+        .swiper-container {
+            height: 810px;
+        }
+    }
+
+    .slide__ {
+        &content {
+            position: absolute;
+            right: 160px;
+            bottom: -60px;
+            width: 785px;
+        }
+
+        &text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: $color-primary;
+        }
+
+        &graphic {
+            display: block;
+            top: 0;
+            right: 0;
+            height: 100%;
+            width: 410px;
+            box-shadow: 4px 4px 10px 1px rgba(0,0,0,.2)
+        }
+    }
+}

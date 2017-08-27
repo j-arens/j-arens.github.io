@@ -1,0 +1,42 @@
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 50px 0 25px;
+    background-color: $color-white;
+}
+
+.site-header__ {
+    &menu-toggle,
+    &branding {
+        height: 35px
+    }
+
+    &menu-toggle {
+        width: 45px;
+        margin-right: 20px;
+    }
+
+    &hamburger {
+        width: 100%;
+        height: 100%;
+    }
+
+    &branding {
+        width: 110px;
+    }
+
+    &logo {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .site-header__ {
+        &branding {
+            margin-right: auto;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+$font-family-base: 'Open Sans', sans-serif;
+$font-family-headings: 'Montserrat', sans-serif;
+
+$base-font-size: 1em;
+$h1-font-size: $base-font-size * 2.25;
+$h2-font-size: $base-font-size * 2;
+$h3-font-size: $base-font-size * 1.75;
+$h4-font-size: $base-font-size * 1.5;
+$h5-font-size: $base-font-size * 1.25;
+$h6-font-size: $base-font-size * 1.1;
+
+$base-line-height: 1.5;
+$heading-line-height: 1.25;
+
+$base-spacing: $base-line-height * 1em;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-headings;
+  font-style: italic;
+  line-height: $heading-line-height;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
+}
+
+p {
+    margin: 0 0 $base-spacing / 2;
+}
+
+a {
+    display: inline-block;
+    color: $color-link-base;
+    text-decoration: none;
+    transition: color 0.1s linear;
+
+    &:hover {
+        color: $color-link-hover;
+    }
+}
+
+.vert-text {
+    display: inline-block;
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: left top 0;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.link {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.link-base {
+    color: $color-font-lt;
+
+    &:hover {
+        color: darken($color-font-lt, 20%);
+    }
+}
+
+.link-secondary {
+    color: $color-secondary;
+
+    &:hover {
+        color: darken($color-secondary, 20%);
+    }
+}
