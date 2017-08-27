@@ -13,7 +13,7 @@
             z-index: 0;
             top: 100px;
             left: 0;
-            width: 610px;
+            width: 100%;
             height: 480px;
             background-color: $color-neutral-dk;
         }
@@ -76,6 +76,14 @@
 
         &content {
             padding: 32px 32px 0 100px;
+        }
+    }
+}
+
+@media screen and (min-width: 610px) {
+    .promo__ {
+        &graphics::after {
+            width: 610px;
         }
     }
 }
