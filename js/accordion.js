@@ -9,7 +9,7 @@ export default function accordion() {
     }
 
     function toggleSpoiler(e) {
-        const index = spoilers.indexOf(e.target.closest('.js-spoiler'));
+        const index = spoilers.indexOf(e.target.parentElement);
 
         if (index === state.activeIndex) {
             spoilers[index].classList.toggle(activeClass);
