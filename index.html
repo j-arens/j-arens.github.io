@@ -8,6 +8,26 @@
     <title>Thinkbox Code Challenge</title>
 </head>
 <body class="home">
+
+    <!-- js-warning -->
+    <noscript>
+        <p class="browserupgrade">
+            You need to have JavaScript enabled to properly view this site.
+        </p>
+    </noscript>
+    <!-- /js-warning -->
+        
+    <!-- warn IE users to upgrade to a better browser -->
+    <script>
+        if (!(window.ActiveXObject) && 'ActiveXObject' in window) {
+            document.body.insertAdjacentHTML(
+                'afterbegin', 
+                '<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://outdatedbrowser.com/">upgrade your browser</a> to view this site properly.<p>'
+            );
+        }
+    </script>
+    <!-- /ie-warning -->
+
     <!-- site-header -->
     <header class="site-header">
         <button class="btn-strip site-header__menu-toggle js-menu-toggle">
@@ -314,12 +334,6 @@
         </div>
     </footer>
     <!-- /site-footer -->
-
-    <!-- canvas-menu -->
-    <div class="canvas-menu">
-
-    </div>
-    <!-- /canvas-menu -->
 
     <!-- scripts -->
     <script type="text/javascript" src="js/main.min.js"></script>
